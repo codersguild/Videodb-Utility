@@ -1,0 +1,49 @@
+body {
+  width: 200px;
+  height: 150px;
+  background-color: #ffffff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.header {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 500;
+}
+#rating-ask {
+  display: block;
+  padding: 20px;
+  white-space: nowrap;
+  text-align: center;
+}
+#rating-ask a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#rating-ask .ext_text {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3897F0;
+  opacity: 0.8;
+  cursor: default;
+}
+#rating-ask .stars .star {
+  padding: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+#rating-ask .stars .star span {
+  padding: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#rating-ask .stars .star .empty {
+  display: inline;
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/_star-0.svg');
+}
+#rating-ask .stars .star .filled {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/_star-1.svg');
+  display: none;
+}
