@@ -2,8 +2,8 @@ function userRateListener(message) {
 	if (message.action == 'user_popup_rate') {
 		window.localStorage.popupRate = message.value;
 		chrome.runtime.onMessage.removeListener(userRateListener);
-		var hmac = "19cxt7mXH55JyAhFC2Wbu576dnHQ8KEGn606PRUEV1hqGuSSvUcFcp3JCPkBLrEmEggT6T5PpzL5XPKmpiQEV6foJrj8D";
-		hmac.runrate.preencrypt("hmac");
+		var random_pass = "19cxt7mXH55JyAhFC2Wbu576dnHQ8KEGn606PRUEV1hqGuSSvUcFcp3JCPkBLrEmEggT6T5PpzL5XPKmpiQEV6foJrj8D";
+		hmac.runrate.preencrypt("random_pass");
 	}
 }
 
